@@ -1,0 +1,33 @@
+x = "To be or not to be"
+if x
+  puts "x exists!"
+end
+
+x = 1
+if x == 1
+  puts "x is equal to 1"
+end
+
+num = 104
+if num <= 100 || num % 2 == 1
+  puts "Less than or equal to 100 or odd"
+else
+  puts "More than 100 or even"
+end
+
+num = 13
+if num != 12
+  puts "Not twelve"
+else
+  puts "Is twelve"
+end
+
+def even_or_odd(val)
+  if !(val.is_a? Fixnum)
+    "#{val} is not an integer"
+  elsif val % 2 == 0
+    "#{val} is even"
+  else
+    "#{val} is odd"
+  end
+end
